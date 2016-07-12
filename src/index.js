@@ -8,18 +8,18 @@ import _ from 'lodash'
 
   @example
   // returns <span>Hello <span class="test">world</span></span>
-  <JsxInterpolate
+  <Interpolate
     template="Hello <emphasis> world </emphasis>"
     emphasis={(c)=> <span className="foo">{c}</span>}>
 
   If you simply want to wrap the content of a tag in a span with a className,
   you can pass the class name instead of a whole function
 
-  <JsxInterpolate
+  <Interpolate
     template="Hello <emphasis> world </emphasis>"
     emphasis="foo"/>
 */
-export default class JsxInterpolate extends React.Component{
+export default class Interpolate extends React.Component{
 
   static propTypes = {
     template: React.PropTypes.string.isRequired
@@ -57,4 +57,4 @@ export default class JsxInterpolate extends React.Component{
   }
 }
 
-JsxInterpolate.propTypes = {template: React.PropTypes.string}
+Interpolate.propTypes = {template: React.PropTypes.string}
