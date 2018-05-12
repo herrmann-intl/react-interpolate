@@ -57,5 +57,3 @@ export default class Interpolate extends React.Component{
     )
   }
 }
-
-Interpolate.propTypes = {template: React.PropTypes.string}
