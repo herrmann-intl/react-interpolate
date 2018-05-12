@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import _ from 'lodash'
 
 /*
@@ -22,7 +23,7 @@ import _ from 'lodash'
 export default class Interpolate extends React.Component{
 
   static propTypes = {
-    template: React.PropTypes.string.isRequired
+    template: PropTypes.string.isRequired
   };
 
   render(){
